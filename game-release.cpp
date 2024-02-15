@@ -1,25 +1,14 @@
-//============================================================================
-// Name        : Tetris.cpp
-// Author      : Sibt ul Hussain
-// Version     :
-// Copyright   : (c) Reserved
-// Description : Basic 2D game of Tetris...
-//============================================================================
 #ifndef TETRIS_CPP_
 #define TETRIS_CPP_
 #include "util.h"
 #include <iostream>
 #include<vector>
 #include<algorithm>
-//#include<cstdlib>
 #include<ctime>
 #include<string>
-//#include<sys/wait.h>
-//#include<stdlib.h>
-//#include<stdio.h>
 #include<unistd.h>
 #include<sstream>
-#include<cmath>      // for basic math functions such as cos, sin, sqrt
+#include<cmath>
 using namespace std;
 
 /* Function sets canvas size (drawing area) in pixels...
@@ -47,7 +36,6 @@ const int snakeLength = maxHieght * maxWidth;
 const int LEFT = 1, RIGHT = 3, UP = 5, DOWN = 2;
 int direction;
 int snakeBody[snakeLength][3], currentLength = 5;
-// int displayarray[400][400];
 
 void emptySnake() {
     int sx = 25, sy = 25;

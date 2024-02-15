@@ -9,6 +9,6 @@ RUN apt-get install freeglut3-dev glew-utils libglewmx1.13 libfreeimage-dev -y
 COPY . .
 
 RUN make
-RUN chmod -R 775 .
+RUN chmod -R 775 game-release
 
 CMD ["./game-release"]
