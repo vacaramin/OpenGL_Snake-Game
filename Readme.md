@@ -2,7 +2,7 @@
 
 Welcome to the classic Snake game! This repository contains the source code for a simple Snake game implemented in C++.
 <p align="center">
-  <img src="https://github.com/vacaramin/OpenGL_Snake-Game/Public/Snake-SS1.png" alt="Snake Screenshot">
+  <img src="https://github.com/vacaramin/OpenGL_Snake-Game/blob/main/Public/Snake-SS1.png?raw=true" alt="Snake Screenshot">
 </p>
 
 ## Installation
