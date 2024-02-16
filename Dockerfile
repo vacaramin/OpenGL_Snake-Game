@@ -1,14 +1,13 @@
-from ubuntu:16.04
+FROM ubuntu:16.04
 
 WORKDIR /game
 
+RUN apt-get update && \
+    apt-get install -y build-essential make && \
+    apt-get install -y freeglut3-dev glew-utils libglewmx1.13 libfreeimage-dev
 
-RUN apt-get update
-RUN apt install make
-RUN apt-get install freeglut3-dev glew-utils libglewmx1.13 libfreeimage-dev -y
 COPY . .
 
-RUN make
-RUN chmod -R 775 game-release
-
-CMD ["./game-release"]
+RUN  make && \
+    chmod -R 775 game-release
+CMD [ "make" ]

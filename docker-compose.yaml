@@ -8,3 +8,5 @@ services:
     image: game-image
     container_name: game-container
     working_dir: /game
+    volumes:
+      - .:/game/
