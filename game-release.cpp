@@ -57,6 +57,7 @@ void drawSnake() {
     for (int i = 1; i < currentLength; ++i) {
         DrawSquare(snakeBody[i][1], snakeBody[i][2], 5, colors[1]);
    }  
+   
 }
 
 void pushSnake() {
@@ -160,7 +161,7 @@ void snakeDirection() {
 }
 
 void snakeapp(){
-    // DrawCircle( *ptrx , *ptry , 5 , colors[5]);
+    DrawCircle( *ptrx , *ptry , 5 , colors[5]);
     
     for (int i=0; i<maxWidth; i+=5){
         for(int j=0 ; j<maxHieght; j+=5){
